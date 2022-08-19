@@ -164,10 +164,14 @@ main {
 	section {
 		width: 100%;
 		height: 100vh;
-		min-height: 80rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		@media (max-height:600px) {
+			min-height: 80rem;
+			
+		}
 	}
 }
 
@@ -182,6 +186,12 @@ main {
 	max-width: calc(100% - 8rem);
 	height: 60rem;
 	max-height: calc(100vh - 8rem);
+	transform: translateY(5vh);
+	@media (max-width: 640px) {
+		height: auto;
+		max-height:auto;
+		grid-template-rows: auto !important;
+	}
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: 2fr 2fr 0.5fr 0.5fr;
 	grid-template-areas:
@@ -298,9 +308,17 @@ main {
 			"title title title title title"
 			"cont1 cont1 cont1 ... cont3"
 			"cont2 cont2 cont2 ... ...";
+
 	}
 	.move-img {
 		grid-column: 3/6;
+	}
+
+	@media (max-width:640px) {
+		margin-bottom: 15rem;
+		.section-grid {
+			grid-template-rows:20em auto !important;
+		}
 	}
 }
 //일정
@@ -445,8 +463,8 @@ main {
 	}
 
 	.section-grid {
-		transform: translateY(10%);
 		grid-template-columns: 1fr 2fr 2fr;
+
 		grid-template-areas:
 			"title title title"
 			"cont1 cont1 cont1"
@@ -460,9 +478,14 @@ main {
 	.section2 {
 		.section-grid {
 			grid-template-areas:
-				"... title title"
+				"title title title"
 				"cont1 cont1 cont1"
 				"cont2 cont2 cont2";
+				gap: 2rem;
+		}
+		.cont1, .cont2{
+			padding:0;
+			word-break: keep-all;
 		}
 	}
 	//button

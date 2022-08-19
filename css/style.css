@@ -167,10 +167,15 @@ footer {
 main section {
   width: 100%;
   height: 100vh;
-  min-height: 80rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-height: 600px) {
+  main section {
+    min-height: 80rem;
+  }
 }
 
 .section-grid {
@@ -183,9 +188,18 @@ main section {
   max-width: calc(100% - 8rem);
   height: 60rem;
   max-height: calc(100vh - 8rem);
+  transform: translateY(5vh);
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 2fr 2fr 0.5fr 0.5fr;
   grid-template-areas: "... ... title title title" "cont3 ... cont1 cont1 cont1" "cont3 ... cont2 cont2 cont2";
+}
+
+@media (max-width: 640px) {
+  .section-grid {
+    height: auto;
+    max-height: auto;
+    grid-template-rows: auto !important;
+  }
 }
 
 .section-grid .move-img {
@@ -297,6 +311,15 @@ main section {
 
 .section4 .move-img {
   grid-column: 3/6;
+}
+
+@media (max-width: 640px) {
+  .section4 {
+    margin-bottom: 15rem;
+  }
+  .section4 .section-grid {
+    grid-template-rows: 20em auto !important;
+  }
 }
 
 .section5 .section-grid {
@@ -428,7 +451,6 @@ main section {
     gap: 4rem;
   }
   .section-grid {
-    transform: translateY(10%);
     grid-template-columns: 1fr 2fr 2fr;
     grid-template-areas: "title title title" "cont1 cont1 cont1" "cont2 cont2 cont2";
   }
@@ -437,7 +459,12 @@ main section {
     grid-row: 1/2;
   }
   .section2 .section-grid {
-    grid-template-areas: "... title title" "cont1 cont1 cont1" "cont2 cont2 cont2";
+    grid-template-areas: "title title title" "cont1 cont1 cont1" "cont2 cont2 cont2";
+    gap: 2rem;
+  }
+  .section2 .cont1, .section2 .cont2 {
+    padding: 0;
+    word-break: keep-all;
   }
   .btn-round {
     min-width: 5em;

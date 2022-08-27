@@ -1,237 +1,250 @@
 <!DOCTYPE html>
 <html lang="ko-KR" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>제주 알고리즘 베이스 캠프</title>
-		
-		<link rel="shortcut icon" href="./favicon.ico" />
-		<link rel="canonical" href="https://jejualcam.co.kr">
-		<link rel="alternate" hreflang="ko" href="https://jejualcam.co.kr" />
-		<meta name="robots" content="index,follow">
-		<meta property="og:type" content="website">
-		<meta property="og:image" content="./img/meta.png" />
-		<meta property="og:url" content="https://jejualcam.co.kr">
-		<meta property="og:title" content="제주 알고리즘 베이스 캠프" />
-		<meta property="og:site_name" content="제주 알고리즘 베이스 캠프">
-		<meta property="og:description" content="2박 3일동안 제주에서 여러 개발자들과 알고리즘 문제 풀이를 함께 해요!">
-		<meta name="description" lang="ko" content="2박 3일동안 제주에서 여러 개발자들과 알고리즘 문제 풀이를 함께 해요!">
-		<meta name="author" content="주식회사 위니브" />
 
-		<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css" />
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/style.css" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>제주 알고리즘 베이스 캠프</title>
+
+	<link rel="shortcut icon" href="./favicon.ico" />
+	<link rel="canonical" href="https://jejualcam.co.kr">
+	<link rel="alternate" hreflang="ko" href="https://jejualcam.co.kr" />
+	<meta name="robots" content="index,follow">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="./img/meta.png" />
+	<meta property="og:url" content="https://jejualcam.co.kr">
+	<meta property="og:title" content="제주 알고리즘 베이스 캠프" />
+	<meta property="og:site_name" content="제주 알고리즘 베이스 캠프">
+	<meta property="og:description" content="2박 3일동안 제주에서 여러 개발자들과 알고리즘 문제 풀이를 함께 해요!">
+	<meta name="description" lang="ko" content="2박 3일동안 제주에서 여러 개발자들과 알고리즘 문제 풀이를 함께 해요!">
+	<meta name="author" content="주식회사 위니브" />
+
+	<link rel="stylesheet" as="style" crossorigin
+		href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
 
 
-	</head>
-	<body>
-		<!-- JEJU Algorithm Base Camp -->
-		<!-- header -->
-		<header>
-			<div class="max-width">
-				<h1>
-					<a href="./"><img src="./img/logo.svg" alt="제주 알고리즘 베이스 캠프" /></a></h1>
-					<a href="https://forms.gle/c4WzAuw3VFujteF48" target="_blank" title="새창" class="btn-apply">신청하기</a>
+</head>
+
+<body>
+	<!-- JEJU Algorithm Base Camp -->
+	<!-- header -->
+	<header>
+		<div class="max-width">
+			<h1>
+				<a href="./"><img src="./img/logo.svg" alt="제주 알고리즘 베이스 캠프" /></a>
+			</h1>
+			<a href="https://forms.gle/c4WzAuw3VFujteF48" target="_blank" title="새창" class="btn-apply">신청하기</a>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<!-- main -->
+	<main>
+		<!-- shape -->
+		<div class="shape-wrap">
+			<svg class="shape" width="1400" height="800" viewBox="0 0 1400 800">
+
+				<filter id="softGlow" height="300%" width="300%" x="-75%" y="-75%">
+					<feMorphology operator="dilate" radius="0" in="SourceAlpha" result="thicken" />
+					<feGaussianBlur in="thicken" stdDeviation="3" result="blurred" />
+					<feFlood flood-color="rgba(123, 255, 208, 0.4)" result="glowColor" />
+					<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
+					<feMerge>
+						<feMergeNode in="softGlow_colored" />
+						<feMergeNode in="SourceGraphic" />
+					</feMerge>
+				</filter>
+
+				<!-- <path d="M 700 230,1050 400,700 570,350 400,700 230 Z"  filter="url(#softGlow)" /> -->
+				<path
+					d="M350 400C350 306.112 426.112 230 520 230H880C973.888 230 1050 306.112 1050 400C1050 493.888 973.888 570 880 570H520C426.112 570 350 493.888 350 400Z"
+					filter="url(#softGlow)" />
+			</svg>
+		</div>
+		<!-- //shape -->
+
+		<!-- section1 -->
+		<section class="sectin-wrap section1">
+			<div class="section-grid">
+				<h2 class="move-title">
+					<span class="fwl">제주</span><span>알고리즘<span><span class="fwl">베이스 캠프</span>
+				</h2>
+				<img class="move-img" src="img/img1.png" alt="" />
+
+				<p class="cont1">
+
+					<strong>2022.10.08(토) ~ 10.10(월)</strong><br />
+					2박 3일동안 제주에서 진행되는 알고리즘 베이스 캠프!<br />
+					여러 개발자들과 즐거운 문제 풀이를 함께 해요!
+				</p>
+				<p class="cont2">
+					[<img src="./img/gdg.svg" alt="Google Developers Group">제주] 와 함께합니다.
+				</p>
+				<p class="cont3">위니브</p>
+
 			</div>
-		</header>
-		<!-- //header -->
+		</section>
+		<!-- //section1 -->
 
-		<!-- main -->
-		<main>
-			<!-- shape -->
-			<div class="shape-wrap">
-				<svg class="shape" width="1400" height="800" viewBox="0 0 1400 800">
-
-					<filter id="softGlow" height="300%" width="300%" x="-75%" y="-75%">
-						<feMorphology operator="dilate" radius="0" in="SourceAlpha" result="thicken" />
-						<feGaussianBlur in="thicken" stdDeviation="3" result="blurred" />
-						<feFlood flood-color="rgba(123, 255, 208, 0.4)" result="glowColor" />
-						<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
-						<feMerge>
-							<feMergeNode in="softGlow_colored"/>
-							<feMergeNode in="SourceGraphic"/>
-						</feMerge>
-					</filter>
-
-					<!-- <path d="M 700 230,1050 400,700 570,350 400,700 230 Z"  filter="url(#softGlow)" /> -->
-					<path d="M350 400C350 306.112 426.112 230 520 230H880C973.888 230 1050 306.112 1050 400C1050 493.888 973.888 570 880 570H520C426.112 570 350 493.888 350 400Z" filter="url(#softGlow)" />
-				</svg>
+		<!-- section2 -->
+		<section class="sectin-wrap section2">
+			<div class="section-grid">
+				<h2 class="move-title"><span class="fwl">안녕하세요.</span><br />이호준<span class="fwl">입니다.</span></h2>
+				<img class="move-img" src="img/img2.jpg" alt="" />
+				<p class="cont1">
+					<span>2박 3일 제주에서 알고리즘에 몰입해봐요.</span><br />
+					<span>알고리즘에 대한 막연한 두려움이 있으셨나요?</span><br />
+					<span>좀 더 높은 수준의 코드를 짜고 싶으세요?</span><br />
+					<span>함께 준비하는 커뮤니티를 원하시나요?</span><br />
+					<span>알고리즘 대회, 입사 코딩 테스트</span><br />
+					<span>화이트보드 테스트, 이직 준비</span><br />
+					<span>모두 다 여기서 함께 준비해봐요. :)</span>
+				</p>
+				<p class="cont2">위니브 대표 이호준</p>
+				<p class="cont3">위니브</p>
 			</div>
-			<!-- //shape -->
-
-			<!-- section1 -->
-			<section class="sectin-wrap section1">
-				<div class="section-grid">
-					<h2 class="move-title">
-						<span class="fwl">제주</span><span>알고리즘<span><span class="fwl">베이스 캠프</span>
-					</h2>
-					<img class="move-img" src="img/img1.png" alt="" />
-
-					<p class="cont1">
-
-						<strong>2022.10.08(토) ~ 10.10(월)</strong><br/>
-						2박 3일동안 제주에서 진행되는 알고리즘 베이스 캠프!<br/>
-						여러 개발자들과 즐거운 문제 풀이를 함께 해요!
-					</p>
-					<p class="cont2">
-						[<img src="./img/gdg.svg" alt="Google Developers Group" >제주] 와 함께합니다.
-					</p>
-					<p class="cont3">위니브</p>
-
-				</div>
-			</section>
-			<!-- //section1 -->
-
-			<!-- section2 -->
-			<section class="sectin-wrap section2">
-				<div class="section-grid">
-					<h2 class="move-title"><span class="fwl">안녕하세요.</span><br/>이호준<span class="fwl">입니다.</span></h2>
-					<img class="move-img" src="img/img2.jpg" alt="" />
-					<p class="cont1">
-							<span>2박 3일간 제주에서 알고리즘에 몰입할 수 있는 기회!</span><br/>
-							<span>알고리즘에 대한 막연한 두려움이 있으셨나요?</span><br/>
-							<span>좀 더 높은 수준의 코드를 짜고 싶으세요?</span><br/>
-							<span>알고리즘 대회, 입사 코딩 테스트, 화이트보드 테스트, 이직 준비</span><br/>
-							<span>모두 다 여기서 함께 준비해봐요. :)
-						</span>
-					</p>
-					<p class="cont2">위니브 대표 이호준</p>
-					<p class="cont3">위니브</p>
-				</div>
-			</section>
-			<!-- //section2 -->
+		</section>
+		<!-- //section2 -->
 
 
-			<!-- section3 -->
-			<section class="sectin-wrap section3">
-				<div class="section-grid">
-					<h2 class="move-title">2박 3일간,<br/>제주<span class="fwl">에서</span></h2>
-					<img class="move-img" src="img/playce.jpg" alt="" />
-					<ul  class="cont1">
-						<li>2022.10.08(토) 13:00 ~ 10.10(월) 12:00</li>
-						<li>플레이스캠프 제주(서귀포시 성산읍 동류암로 20)</li>
-					</ul>
-					<p class="cont2">
-						<span class="sr-only">지도</span>
-						<a class="btn-round" href="https://naver.me/FcagjdDN" target="_blank">네이버 지도</a>
-						<a class="btn-round" href="http://kko.to/zmb2UY-YM" target="_blank">카카오맵</a>
-					</p>
-					<p class="cont3">
-						<a href="https://www.playcegroup.com/" target="_blank" title="새창">플레이스캠프 제주</a>
-					</p>
-				</div>
-			</section>
-			<!-- //section3 -->
+		<!-- section3 -->
+		<section class="sectin-wrap section3">
+			<div class="section-grid">
+				<h2 class="move-title">2박 3일간,<br />제주<span class="fwl">에서</span></h2>
+				<img class="move-img" src="img/playce.jpg" alt="" />
+				<ul class="cont1">
+					<li>2022.10.08(토) 13:00 ~ 10.10(월) 12:00</li>
+					<li>플레이스캠프 제주(서귀포시 성산읍 동류암로 20)</li>
+				</ul>
+				<p class="cont2">
+					<span class="sr-only">지도</span>
+					<a class="btn-round" href="https://naver.me/FcagjdDN" target="_blank">네이버 지도</a>
+					<a class="btn-round" href="http://kko.to/zmb2UY-YM" target="_blank">카카오맵</a>
+				</p>
+				<p class="cont3">
+					<a href="https://www.playcegroup.com/" target="_blank" title="새창">플레이스캠프 제주</a>
+				</p>
+			</div>
+		</section>
+		<!-- //section3 -->
 
-			<!-- section4 -->
-			<section class="sectin-wrap section4">
-				<div class="section-grid">
-					<h2 class="move-title">함께 <span class="fwl">풀어요</span></h2>
-					<img class="move-img" src="img/img3.jpg" alt="" />
-					<ul class="cont1 list-style">
-						<li><span class="label">접수 기간</span> <span><strong>2022.08.23</strong>(화) ~ <strong>2022.09.11</strong>(일)</span></li>
-						<li><span class="label">모집 인원</span> <span><strong class="fc-point">35명</strong> (25명 - 숙박 / 10명 - 비 숙박)<br/>
+		<!-- section4 -->
+		<section class="sectin-wrap section4">
+			<div class="section-grid">
+				<h2 class="move-title">함께 <span class="fwl">풀어요</span></h2>
+				<img class="move-img" src="img/img3.jpg" alt="" />
+				<ul class="cont1 list-style">
+					<li><span class="label">접수 기간</span> <span><strong>2022.08.23</strong>(화) ~
+							<strong>2022.09.11</strong>(일)</span></li>
+					<li><span class="label">모집 인원</span> <span><strong class="fc-point">35명</strong> (25명 - 숙박 / 10명 - 비
+							숙박)<br />
 							<span class="small-text">
-								* 나이 제한 : 만 16세 이상<br/>
+								* 나이 제한 : 만 16세 이상<br />
 								* 청소년 참가자는 비 숙박으로 참여할 수 있으며, 맥주 모임에는 참여할 수 없습니다.
 							</span>
 						</span>
-						</li>
-						<li><span class="label">합격자 발표</span> <span><strong>2022.09.13</strong>(화)</span></li>
-						<li><span class="label">진행 일시</span> <span class="fc-point"><strong>2022.10.08</strong>(토) ~ <strong>10.10</strong>(월)</span></li>
-						<li><span class="label">풀이 언어</span> <span> 파이썬 / 자바 / 자바스크립트 / C계열 언어 등 제약 없음<br/>
+					</li>
+					<li><span class="label">합격자 발표</span> <span><strong>2022.09.13</strong>(화)</span></li>
+					<li><span class="label">진행 일시</span> <span class="fc-point"><strong>2022.10.08</strong>(토) ~
+							<strong>10.10</strong>(월)</span></li>
+					<li><span class="label">풀이 언어</span> <span> 파이썬 / 자바 / 자바스크립트 / C계열 언어 등 제약 없음<br />
 
 							<span class="small-text">한글날을 맞이하여 한글 코딩 환영합니다.</span>
 							<br>
-							<span class="small-text">알고리즘 풀이 발표 자료를 만들기 위한 기본 재료와 강의자료를 제공합니다. 재료에 있는 카드는 실물로 인쇄됩니다.</span>
+							<span class="small-text">알고리즘 풀이 발표 자료를 만들기 위한 기본 재료와 강의자료를 제공합니다. 재료에 있는 카드는 실물로
+								인쇄됩니다.</span>
 						</span></li>
-						<li>
-							<span class="label">진행 방식</span> 
+					<li>
+						<span class="label">진행 방식</span>
 						<span>
-						각자 돌아가면서 한 문제씩 풀이<br/>
+							각자 돌아가면서 한 문제씩 풀이<br />
 							<span class="small-text">(발표 10~15분 / 개선점 같이 찾기 5분)</span>
 						</span>
-						</li>
-						<li><span class="label">접수비</span> <span class="fc-point">무료</span></li>
-					</ul>
-	
-					<div class="cont2">	
-						<p>
-						* 숙박, 간식, 강의비가 무료입니다. <br/>
-						<span class="small-text">(식사와 항공편을 지원하지 않습니다. 여러분이 원하시는 맛집을 찾아가보세요)</span>
-						</p>
-						<p>*  캠프는 매년 가을에 진행합니다.</p>
-						<p>*  연사 증빙서류 발급 가능합니다. </p>
-						<br>
-						<a class="btn-round" href="https://github.com/weniv/AlgorithmCamp/tree/main/asset" target="_blank">재료 다운로드</a>
-					</div>
-					<p class="cont3">위니브</p>
-				</div>
-			</section>
-			<!-- //section4 -->
+					</li>
+					<li><span class="label">접수비</span> <span class="fc-point">무료</span></li>
+				</ul>
 
-			<!-- section5 -->
-			<section class="sectin-wrap section5">
-				<div class="section-grid">
-					<h2 class="move-title">일정</h2>
-					<img class="move-img" src="img/img4.jpg" alt="" />
-					<div class="cont1">
-						<ul class="schedule">
-							<li><strong>첫째 날,</strong> <span class="date">10.08(토)</span>
-								<ul>
-									<li><strong>오후</strong> : 접수 및 코딩 테스트 통계와 합격 전략, 참가자 문제 풀이 진행 </li>
-									<li><strong>저녁</strong> : 성산일출봉 일몰 보러 가기, 모두 모여 맥주 마시며 소통하기</li>
-								</ul>
-							</li>
-							<li><strong>둘째 날,</strong> <span class="date">10.09(일)</span>
-								<ul>
-									<li><strong>이른 오전</strong> : 성산일출봉 일출 보러 가기</li>
-									<li><strong>오전 ~ 오후</strong> : 참가자 문제 풀이 진행</li>
-									<li><strong>저녁</strong> : 성산일출봉 일몰 보러 가기, 작게 모여 맥주 마시며 소통하기</li>
-								</ul>
-							</li>
-							<li><strong>셋째 날,</strong> <span class="date">10.10(월)</span>
-								<ul>
-									<li><strong>오전</strong> : 참가자 문제 풀이 진행 및 퇴실 진행</li>
-								</ul>
-							</li>
+				<div class="cont2">
+					<p>
+						* 숙박, 간식, 강의비가 무료입니다. <br />
+						<span class="small-text">(식사와 항공편을 지원하지 않습니다. 여러분이 원하시는 맛집을 찾아가보세요)</span>
+					</p>
+					<p>* 캠프는 매년 가을에 진행합니다.</p>
+					<p>* 연사 증빙서류 발급 가능합니다. </p>
+					<br>
+					<a class="btn-round" href="https://github.com/weniv/AlgorithmCamp/tree/main/asset"
+						target="_blank">재료 내려받기</a>
+				</div>
+				<p class="cont3">위니브</p>
+			</div>
+		</section>
+		<!-- //section4 -->
+
+		<!-- section5 -->
+		<section class="sectin-wrap section5">
+			<div class="section-grid">
+				<h2 class="move-title">일정</h2>
+				<img class="move-img" src="img/img4.jpg" alt="" />
+				<div class="cont1">
+					<ul class="schedule">
+						<li><strong>첫째 날,</strong> <span class="date">10.08(토)</span>
+							<ul>
+								<li><strong>오후</strong> : 접수 및 코딩 테스트 통계와 합격 전략, 참가자 문제 풀이 진행 </li>
+								<li><strong>저녁</strong> : 성산일출봉 일몰 보러 가기, 모두 모여 맥주 마시며 소통하기</li>
+							</ul>
+						</li>
+						<li><strong>둘째 날,</strong> <span class="date">10.09(일)</span>
+							<ul>
+								<li><strong>이른 오전</strong> : 성산일출봉 일출 보러 가기</li>
+								<li><strong>오전 ~ 오후</strong> : 참가자 문제 풀이 진행</li>
+								<li><strong>저녁</strong> : 성산일출봉 일몰 보러 가기, 작게 모여 맥주 마시며 소통하기</li>
+							</ul>
+						</li>
+						<li><strong>셋째 날,</strong> <span class="date">10.10(월)</span>
+							<ul>
+								<li><strong>오전</strong> : 참가자 문제 풀이 진행 및 퇴실 진행</li>
+							</ul>
+						</li>
 						</li>
 					</ul>
 					<p class="small-text">* 상황에 따라 일정이 변경될 수 있습니다.</p>
-					</div>
-					<p class="cont3">위니브</p>
 				</div>
-			</section>
-			<!-- //section5 -->
+				<p class="cont3">위니브</p>
+			</div>
+		</section>
+		<!-- //section5 -->
 
-			<!-- //section6 -->
-			<section class="last-section">
-				<div>
-					<h2 class="title">
-						<span class="fwl">제주</span><br/>
-						알고리즘 <br/>
-						베이스 캠프<br/>
-						<span class="fwl">함께 할까요?</span>
-					</h2>
-					<a href="https://forms.gle/c4WzAuw3VFujteF48" target="_blank" title="새창" class="btn-apply">신청하기</a>
-				</div>
-			</section>
-			<!-- //section6 -->
-		</main>
-		<!-- // main -->
+		<!-- //section6 -->
+		<section class="last-section">
+			<div>
+				<h2 class="title">
+					<span class="fwl">제주</span><br />
+					알고리즘 <br />
+					베이스 캠프<br />
+					<span class="fwl">함께 할까요?</span>
+				</h2>
+				<a href="https://forms.gle/c4WzAuw3VFujteF48" target="_blank" title="새창" class="btn-apply">신청하기</a>
+			</div>
+		</section>
+		<!-- //section6 -->
+	</main>
+	<!-- // main -->
 
-		<!-- //footer -->
-		<footer>
-			주식회사 위니브
-		</footer>
-		<!-- //footer -->
+	<!-- //footer -->
+	<footer>
+		주식회사 위니브
+	</footer>
+	<!-- //footer -->
 
 
-		<!-- script -->
-		<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/anime.min.js"></script>
-		<script src="js/scrollMonitor.js"></script>
-		<script src="js/script.js"></script>
-		<!-- //script -->
-	</body>
+	<!-- script -->
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/anime.min.js"></script>
+	<script src="js/scrollMonitor.js"></script>
+	<script src="js/script.js"></script>
+	<!-- //script -->
+</body>
+
 </html>

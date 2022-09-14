@@ -462,7 +462,8 @@ main section {
     grid-template-areas: "title title title" "cont1 cont1 cont1" "cont2 cont2 cont2";
     gap: 2rem;
   }
-  .section2 .cont1, .section2 .cont2 {
+  .section2 .cont1,
+  .section2 .cont2 {
     padding: 0;
     word-break: keep-all;
   }
@@ -473,4 +474,10 @@ main section {
   .list-style li {
     margin-bottom: 2em;
   }
+}
+
+.link {
+  text-decoration: underline;
+  color: rgba(var(--point-rgb), 1);
+  font-weight: bold;
 }

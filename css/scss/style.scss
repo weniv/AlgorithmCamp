@@ -547,17 +547,10 @@ main {
 
 @media (max-width: 640px) {
   .last-section {
-    margin-top: 10rem; // 모바일에서 이전 섹션과의 간격 확보
-    padding-top: 2rem;
+    margin-top: 30rem; // 모바일에서 이전 섹션과의 간격 확보
   }
 
   main section {
-    min-height: auto; // 모바일에서 최소 높이 제거
-    height: auto; // 모바일에서 고정 높이 제거
-    padding-bottom: 3rem; // 섹션 하단 여백 추가
-  }
-
-  .section4 {
-    margin-bottom: 20rem; // section4와 last-section 사이 간격 증가
+    padding-bottom: 20rem; // 섹션 하단 여백 추가
   }
 }

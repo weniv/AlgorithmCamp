@@ -568,15 +568,9 @@ main section {
 }
 @media (max-width: 640px) {
   .last-section {
-    margin-top: 10rem;
-    padding-top: 2rem;
+    margin-top: 30rem;
   }
   main section {
-    min-height: auto;
-    height: auto;
-    padding-bottom: 3rem;
-  }
-  .section4 {
-    margin-bottom: 20rem;
+    padding-bottom: 20rem;
   }
 }
